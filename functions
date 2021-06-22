@@ -1,0 +1,89 @@
+1.a. Print odd numbers in an array 
+  
+   function odd(){
+        var a = userInput[0].split(" ");
+        var sum=[];
+            for(var i=0;i<a.length;i++)
+                {
+                    if(a[i]%2==1)
+                    sum.push(a[i]);
+                }
+    console.log(sum.join(" "));
+    sum=[];
+    }
+    odd();
+    
+  b. Convert all the strings to title caps in a string array
+  
+   var a = function(){
+    var b = userInput[0].split(" ");
+    for(var i=0;i<b.length;i++)
+      {
+        b[i]=b[i][0].toUpperCase()+b[i].slice(1);
+      }
+    console.log(b.join(" "));
+    return b;
+    };
+    a();
+
+  c. Sum of all numbers in an array
+  
+      var a = function(){
+      var b = userInput[0].split(" ");
+      var sum=0;
+      for(var i=0;i<b.length;i++)
+      {
+        sum=(+sum)+(+b[i]);
+      }
+      console.log(sum);
+      return b;
+      };
+      a();
+
+  d. Return all the prime numbers in an array
+  
+        var a = function(){
+  var b = userInput[0].split(" ");
+  var isPrime = true,sum=[];
+    for(var i=0;i<b.length;i++)
+    {
+      for (var j=2;j<b[i];j++) {
+        if (b[i] % j !== 0) {
+            isPrime = false;
+            sum.push(b[i]);
+            break;
+        }
+        }  
+        }
+       console.log(sum.join(" "));
+       sum=[];
+      return b;
+      };
+       a();
+  
+  e.  Return all the palindromes in an array
+  
+          var a = function(){
+            var b = userInput[0].split(" ");
+            var sum=[];
+            for(var i=0;i<b.length;i++)
+            {
+              var p = b[i].split("").reverse().join("");
+                  if(b[i]==p)
+                  sum.push(b[i]);
+            }
+            console.log(sum.join(" "));
+            sum=[];
+            return b;
+          };
+          a();
+          
+          
+  f. Remove duplicates from an array
+
+          var a = function(){
+          var b = userInput[0].split(" ");
+          console.log([...new Set(b)]);
+          return b;
+           };
+          a();
